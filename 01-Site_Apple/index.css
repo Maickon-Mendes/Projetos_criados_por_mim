@@ -1,0 +1,744 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.clear{
+    clear: both;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+header{
+    background-color: rgba(40, 40, 40, 0.94);
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 9px;
+}
+        
+    /*------menu mobile-------*/
+nav.mobile{
+    display: none;
+}
+
+
+nav.mobile ul li{
+    display: inline-block;
+    padding: 5px 10px;
+    
+}
+
+nav.mobile ul li a i{
+    font-size: 1.2rem;
+}
+
+nav.mobile .fa-bars{
+    position: absolute;
+    left: 5%;
+    top: 12px;
+    transform: translate(-50%);
+}
+
+nav.mobile .fa-apple{
+    position: absolute;
+    left: 50%;
+    top: 12px;
+    font-size: 1.4rem;
+    transform: translate(-50%);
+}
+
+nav.mobile .fa-shopping-bag{
+    position: absolute;
+    left: 95%;
+    top: 12px;
+    transform: translate(-50%);
+}
+
+
+
+    /*------final menu mobile-------*/
+
+header nav.descktop{
+    margin: 0 auto;
+    
+}
+
+.descktop ul{
+  margin: 0 auto; 
+  text-align: center;
+
+}
+
+.descktop .center{
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.descktop li div{
+    list-style: none; 
+    letter-spacing: -.01rem;
+    flex-direction: row;
+}
+
+header nav ul a{
+    text-decoration: none;
+    font-weight: 200;
+    color: rgb(255, 255, 255);
+    font-size: .7rem;  
+    opacity: .8;
+    transition: .2s;
+}
+
+nav ul a:hover{
+    opacity: inherit;
+    color: white;
+}
+
+ ul a .fa-apple{
+    font-size: .9rem;
+}
+
+.fa-search , .fa-shopping-bag{
+    font-size: .8rem;
+}
+
+/*final do header*/
+
+
+/*Inicio do main*/
+
+
+/*1ª sessão*/
+
+main{
+    background-color: rgb(239,239,254);
+}
+
+.conteudo-principal .venda-online{
+    padding-top: 60px ;
+    font-size: .8rem;
+    text-align: center;
+    background-color: rgb(249, 249, 249);
+}
+
+.venda-online .link-ecomerce{
+    padding-bottom: 10px;
+}
+
+.venda-online a{
+    color: blue;
+    text-decoration: none;
+    transition: 1s;
+}
+
+
+.venda-online a:hover{
+    text-decoration: underline;
+    transition: .2s;
+}
+
+/*2ª sessão*/
+section.markting-principal{
+    width: 100%;
+}
+
+.markting-principal .presentes-fundo{
+    width: 100%;
+    height: 50vh;
+    background-image: url(./imagens/productFamily_without_bg.deb0dcb0.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: contain;
+
+
+}
+
+.presentes .logo-topo{
+    margin: 30px auto 10px auto ;
+    width: 110px;
+    height: 110px;
+    background-image: url(./imagens/symbole-apple-icone-logo-rouge.png);
+    background-size: contain;
+}
+
+.presentes a{   
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+
+.presentes a h1{
+    text-align: center;
+    max-width: 800px; 
+    font-size: 2.8rem;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+}
+
+.presentes .text{
+    margin: 10px auto; 
+
+}
+
+.presentes .text span{
+    font-size: 1.1rem;
+    color: rgb(93, 117, 255);
+}
+
+/*inicio sessão novo smartfone*/
+
+.anuncio-iphone13{
+    background-color: rgb(247, 247, 247);
+    height: 100vh;
+}
+
+.anuncio-novo-iphone .link-vendas{
+    color: black;
+    text-decoration: none;
+    
+}
+
+.anuncio-novo-iphone a h1{
+    text-align: center;
+    font-size: 3.3rem;
+    font-weight: 500;
+    padding-top: 60px;
+    letter-spacing: -.1rem;
+    color: rgb(15,15,15);
+}
+
+.anuncio-novo-iphone span{
+    display: block;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.anuncio-novo-iphone  .links-compras {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.links-compras a{
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 1.2rem;
+    color: rgb(93, 117, 255);
+}
+
+.links-compras a:hover{
+    text-decoration: underline;
+}
+
+.anuncio-novo-iphone .iphone{
+    width: 100%;
+    height: 480px;
+    background-image: url(./imagens/pro.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
+    margin-bottom: 13px;
+}
+/*52,40,60*/
+/*242,185,225*/
+
+.produtos{
+    background-color: rgb(71,59,79);
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.produtos h1{
+    color: white;
+    font-size: 3.5rem;
+    font-weight: 500;
+    letter-spacing: -3px;
+    padding-top: 40px;
+    margin-bottom: -20px;
+}
+
+.produtos span{
+    color: rgb(242, 185, 225);
+    font-size: 1.7rem;
+    line-height: -10px;
+    letter-spacing: -1px;
+}
+
+.produtos .links-compras{
+    margin-top: 15px;
+
+}
+
+.iphone13s{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(71,59,79);
+    background-image: url(./imagens/iphone13.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-top: -85px;
+}
+
+.smarwhatch{
+    height: 100vh;
+    float: left;
+    width: 50%;
+    background-color: white;
+    text-align: center;
+    border: 10px solid rgb(255, 255, 255);
+    border-top: 5px solid white;
+}
+
+.smarwhatch span{
+    color: red;
+
+}
+
+.smarwhatch-info{
+    padding-top: 25px;
+}
+
+.smarwhatch-info .fa-apple{
+    font-size: 2.3rem;
+}
+
+.smarwhatch-info h1{
+    font-size: 2rem;
+    color: rgb(14, 13, 13);
+}
+
+.smarwhatch-info h3{
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+
+.smarwhatch-info .links-compras a{
+    font-size: 1rem;
+    
+}
+
+.smarwhatch span:nth-of-type(2){
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.smartwatch-fundo{
+    background-image: url(./imagens/relogio.png);
+    width: 100%;
+    height: 398px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.airpods{
+    float: left;
+    width: 50%;
+    height: 100vh;
+    text-align: center;
+    border: 10px solid white;
+    border-top: 5px solid white;
+    background-color: rgb(14, 13, 13);
+}
+
+.airpods-fundo .airpods-info{
+    height: 30%;
+}
+
+.airpods-info h1{
+    font-size: 2.5rem;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding-top: 25px;
+}
+
+.airpods-fundo{
+    width: 100%;
+    height: 70%;
+    background-image: url(./imagens/fone.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    
+}
+
+.airpods p{
+    color: white;
+    width: 400px;
+    margin: 0 auto; 
+    font-size: 1rem;
+}
+
+.airpods-info .links-compras{
+    padding-top: 10px;
+}
+
+.airpods-info .links-compras a{
+    font-size: 1rem; 
+}
+
+.ipad-mini {
+    float: left;
+    width: 50%;
+    height: 100vh;
+    border: 10px solid white;
+    border-top: 5px solid white;
+    background-color: white;
+}
+
+.ipad-mini .ipad-mini-info{
+    width: 100%;
+    height: 30%;
+    text-align: center;
+}
+
+.ipad-mini-info h1{
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding-top: 30px;
+    color: rgb(14, 13, 13);
+}
+
+.ipad-mini-info h1 span{
+    padding-right: 15px;
+    font-family: Pacifico;
+    font-size: 2.7rem;
+    background: -webkit-linear-gradient(45deg, rgb(102,64,140) ,rgb(184,68,237), rgb(212,85,254), rgb(237,79,145), rgb(189,57,96));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.ipad-mini-info p{
+    font-size: 1.2rem;
+    margin-top: -10px;
+    color: rgb(15,15,15);
+}
+
+.ipad-mini-info .links-compras a{
+    font-size: 1rem;
+    padding-top: 5px;
+}
+
+.ipad-mini .ipad-fundo{
+    background-image: url(./imagens/ipadmini.jpg);
+    width: 100%;
+    height: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    
+}
+
+.colab-smartfit{
+    float: right;
+    width: 50%;
+    height: 100vh;
+    border: 10px white solid;
+    border-left: 5px solid white;
+    background-color: white;
+}
+
+.colab-smartfit .colab-smartfit-info{
+    width: 100%;
+    height: 30%;
+    text-align: center;
+}
+
+.colab-smartfit-info h1{
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding-top: 30px;
+    color: rgb(14, 13, 13);
+}
+
+.colab-smartfit-info p{
+    font-size: 1.2rem;
+    margin-top: -10px;
+    width: 60%;
+    margin: 0 auto;
+    line-height: 25px;
+    letter-spacing: -.5px;
+    color: rgb(15,15,15);
+}
+
+.colab-smartfit-info .links-compras{    
+    padding-top: 10px;
+}
+
+.colab-smartfit-info .links-compras a{
+    font-size: 1rem;
+} 
+
+.colab-smartfit .colab-smartfit-fundo{
+    background-image: url(./imagens/applesmartfit.jpg);
+    width: 100%;
+    height: 65%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+}
+
+.mecpro{
+    float: left;
+    width: 50%;
+    height: 100vh;
+    border: 10px white solid;
+    border-top: 5px solid white;
+    
+    background-color: white;
+}
+
+.mecpro .mecpro-info{
+    width: 100%;
+    height: 30%;
+    text-align: center;
+}
+
+.mecpro-info h1{
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding-top: 30px;
+    color: rgb(14, 13, 13);
+}
+
+.mecpro p{
+    color: rgb(15,15,15);
+}
+
+.mecpro-info .links-compras a{
+    padding-top: 10px;
+    font-size: 1rem;
+}
+
+.mecpro .mecpro-fundo{
+    background-image: url(./imagens/macbook-pro.png);
+    width: 100%;
+    height: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.appletv{
+    float: left;
+    width: 50%;
+    height: 100vh;
+    border: 10px white solid;
+    border-top: 5px solid white;
+    background-image: url(./imagens/natal-charlie.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+    background-color: white;
+}
+
+.appletv .appletv-info{
+    padding-top: 25px;
+}
+
+.appletv .appletv-info h1{
+    font-size: 2.5rem;
+    color: white;
+    font-weight: 400;
+}
+
+.appletv .appletv-play {
+    text-align: center;
+    position: relative;
+    top: 45%;
+    left: 0;
+}
+
+.appletv-play h1{
+    font-family: Ultra;
+    color: rgb(93, 117, 255);
+    margin: 0 auto;
+    font-size: 2rem;
+}
+
+.appletv-play p{
+    font-size: 1.2rem;
+    color: rgb(18, 40, 161);
+    padding-top: 5px;
+}
+
+.appletv-play span{
+    color: rgb(93, 117, 255);
+    line-height: 40px;
+}
+
+.info-assinaturas{
+    padding-top: 10px 2%;
+    background-color: rgba(242, 242, 250, 0.932);
+}
+
+.info-assinaturas .info-req{
+    max-width: 1100px;
+    padding: 5px;
+    margin: 0 auto;
+    font-size: .7rem;
+}
+
+.info-assinaturas .info-req:nth-of-type(4){
+    padding-bottom: 20px;
+}
+
+section.servicos{
+    background-color: rgba(242, 242, 250, 0.932) ;
+}
+
+   /*---------nav inferior mobile------------*/
+
+.lista-ordenada-mobile nav ul li{
+    padding: 10px;
+    font-size: .7rem;
+    border-bottom: 1px solid lightgray;
+    color: gray;
+    font-weight: 500;
+    display: none;
+}
+.lista-ordenada-mobile nav ul li i{
+    float: right;
+}
+
+.lista-ordenada-mobile nav ul li:hover{
+    cursor: pointer;
+    color: rgb(68, 68, 68);
+}
+
+
+   /*-------------final------------*/
+
+.servicos hr{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.lista-ordenada{
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-inferior{    
+    line-height: 10px;
+}
+
+.nav-inferior .links-internos h3{
+    font-size: .8rem;
+    color: rgb(85,85,85);
+    padding: 13px 0 7px 0;
+    padding-top: 25px;
+}
+
+.links-internos a{
+    font-size: .7rem;
+    color: rgb(105,105,105);
+    text-decoration: none;  
+    font-weight: 500;
+}
+
+.links-internos li{
+    padding: 6px 0;
+}
+
+.links-internos a:hover{
+    text-decoration: underline;
+    color: rgb(105,105,105);
+}
+
+.nav-inferior .links-internos{
+    list-style: none;
+    text-align: left;
+    max-width: 160px;
+}
+
+.servicos .pontos-encontro{
+    padding: 15px 0;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.servicos .pontos-encontro p{
+    color: rgb(105,105,105);
+    font-size: .7rem;
+    margin: 0 2%;
+}
+
+.servicos .pontos-encontro a{
+    color: rgb(93, 117, 255);
+    text-decoration: none;
+}
+
+.servicos .pontos-encontro a:hover{
+    text-decoration: underline;
+}
+
+.servicos .pontos-encontro hr{
+    margin-top: 15px;
+}
+
+footer{
+    background-color: rgba(233, 233, 248, 0.76);
+    color: rgb(105,105,105);
+    font-size: .7rem;
+    
+    
+}
+
+footer .dimenssao-foother{
+    padding: 10px 0;
+    border-top: 1px solid lightgray;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+footer .links-rodape{
+    float: left;
+    margin: 0 2%;
+}
+
+footer .links-rodape a{
+    color: rgb(85,85,85);
+    text-decoration: none;
+    padding: 0 15px ;
+    border-left: 1px solid lightgray;
+    
+}
+
+footer .links-rodape a:nth-of-type(1){
+    border: none;
+    padding-left: 0;
+}
+
+footer .pais {
+    float: right;
+    text-decoration: none;
+    color: rgb(85,85,85);
+    font-size: .7rem;
+    font-weight: 500;
+}
+
+

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="slider">
+        <div class="slides">
+
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+
+            <div class="slide first">
+                <img src="../imagens/Furos_concreto04.jpeg" alt="">
+            </div>
+
+            <div class="slide ">
+               <img src="../imagens/Furos_concreto01.jpg" alt="">
+            </div>
+
+            <div class="slide ">
+                <img src="../imagens/Furos_concreto02.jfif" alt="">
+            </div>
+
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+            </div>
+
+            
+        </div>
+
+        <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+        </div>
+    </div>
+
+
+    <!-- Teste de como vai ficar os slide dos serviços -->
+    <script>
+         let count = 1;
+         document.getElementById("radio1").checked = true;
+
+         setInterval(()=>{
+             nextImage()
+         },3000)
+
+         function nextImage(){
+            count++;
+            if(count > 3){
+                count = 1
+            }
+            document.getElementById("radio"+count).checked = true;
+
+            }
+    </script>
+</body>
+</html>
+                

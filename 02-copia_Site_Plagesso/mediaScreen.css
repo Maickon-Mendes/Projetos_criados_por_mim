@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root{
+    --verdeemp: #41e23c;
+    --verdetitulos:#5aa348;
+    --corrope:rgb(85,167,61);
+    --pretofont:rgb(94, 94, 94);
+    --corrope:rgb(85,167,61);
+}
+
+*{  font-family: Roboto , sans-serif;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: rgb(94, 94, 94);
+    font-size: 1em;
+}
+
+
+
+@media screen and (max-width: 980px) {
+    
+    .cabecalho-contatos{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cabecalho-contatos .num-contatos{
+        justify-content: center;
+        
+    }
+
+    .cabecalho-contatos .contatos-redes-sociais p{
+        margin-top: 20px;
+    }
+
+    header nav .menu-nav .cabecalho-servicos ul{
+        justify-content: flex-start;
+    }
+
+    .cabecalho-servicos ul li a{
+        font-size: 18px;
+        gap: 0;
+    }
+
+    header nav a .logo-empresa{
+        width: 200px;
+        height: 110px;
+        margin: 15px 0 10px 10px; 
+       
+    }
+
+    .cabecalho-servicos ul li a .fa-search{
+        font-size: 19px;
+    }
+
+    header nav .menu-nav{
+        margin: 0%;
+    }
+}
+
+@media screen and (max-width: 770px){
+    .menu-descktop{
+        display: none;
+    }
+
+    header .menu-mobile{
+        display: block;
+    }
+
+    .menu-mobile .bar-func{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 2%;
+    }
+
+    .bar-func span {
+        margin: 10px 0;
+    }
+
+    .bar-func span a{
+        font-weight: 400;
+        font-size: 1.1em;
+        color: var(--verdeemp);
+        text-transform: uppercase;
+    }
+
+    .bar-func span a i{
+        font-size: 1.3em;
+        color: var(--verdeemp);
+    }
+
+    .logo-mobile{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 110px; 
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url(01-imagens/logomarca.png);
+    }
+
+    .cabContatos-mobile{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cabContatos-mobile .num-contatos-mobile{
+        display: flex;
+        justify-content: center;
+        padding: 25px 0;
+    }
+
+    .cabContatos-mobile .num-contatos-mobile p{
+        padding: 0 10px;
+    }
+
+    .cabContatos-mobile .num-contatos-mobile p i{
+        color: var(--verdeemp);
+        font-size: 1.2em;
+    }
+
+    .redes-sociais-mobile{
+        display: flex;
+        justify-content: center;
+    }
+
+    .redes-sociais-mobile p i{
+        font-size: 25px;
+        color: var(--verdeemp);
+        padding: 0 2px;
+        margin-bottom: 19px;
+    }
+
+    main .fundo-main{
+        top: 160px;
+    }
+
+    .info-empresa .fachada-emp{
+        width: 100%;
+        float: none;
+    }
+
+    .info-empresa .missao-emp{
+        width: 100%;
+        float: none;
+    }
+
+    main .box-branding{
+        margin-top: 150px;
+    }
+
+    .historia{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .historia-emp{
+        flex-direction: column-reverse;
+    }
+
+    .info-empresa .historia-emp h2{
+        text-align: center;
+    }
+
+    .info-empresa .historia-emp .primeira-sessao{
+        float: none;
+        width: 100%;
+    }
+
+    .imagem-historia{
+        float: none;
+        width: 100%;
+        height: 300px;
+    }
+
+    .historia-emp .segunda-sessao p{
+        float: none;
+        width: 100%;
+
+    }
+    
+    .img-historia{
+        float: none;
+        width: 100%;
+        height: 400px;
+    }
+    .segunda-sessao{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (max-width: 620px){
+    .termos{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .dados-emp .termos li{
+        border-left: none;
+    }
+
+
+    .contatos{
+      flex-direction: column;  
+      border-top: 1px solid gray;
+    }
+
+
+    .contatos .contato-emp{
+        text-align: center;
+        width: 100%;
+        padding: 10px 0;
+        border: none;
+    }
+}

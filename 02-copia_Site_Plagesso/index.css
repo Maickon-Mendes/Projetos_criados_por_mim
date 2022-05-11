@@ -1,0 +1,575 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root{
+    --verdeemp: #41e23c;
+    --verdetitulos:#5aa348;
+    --corrope:rgb(85,167,61);
+    --pretofont:rgb(94, 94, 94);
+    --corrope:rgb(85,167,61);
+}
+
+*{  font-family: Roboto , sans-serif;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: rgb(94, 94, 94);
+    font-size: 1em;
+}
+
+body, html{
+  width: 100%;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.clear{
+    clear: both;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    background-color: white;
+}
+
+
+header .menu-mobile{
+    display: none;
+}
+
+header nav{
+    display: flex;
+ 
+}
+
+header nav a .logo-empresa{
+    width: 210px;
+    height: 110px;
+    margin: 15px 0 10px 100px; 
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(01-imagens/logomarca.png);
+}
+
+header nav .menu-nav{
+    width: 70%;
+    display: flex;
+    margin-left: 35px;
+    flex-direction: column;
+}
+
+header nav .menu-nav .cabecalho-contatos{
+    display: flex;
+    padding: 20px 0;
+}
+
+.menu-nav .num-contatos{
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    
+}
+
+.num-contatos p a{
+    font-size: 19px;
+    color: var(--pretofont);
+}
+
+
+.num-contatos p:nth-of-type(2){
+    padding-left: 20px;
+}
+
+.num-contatos p i{
+    color: var(--verdeemp);
+}
+
+.menu-nav .contatos-redes-sociais{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu-nav .contatos-redes-sociais p i{
+    font-size: 25px;
+    color: var(--verdeemp);
+}
+
+.menu-nav .contatos-redes-sociais p i:hover{
+    opacity: 0.60;
+}
+
+.menu-nav .contatos-redes-sociais p{
+    padding: 0 3px;
+}
+
+header nav .menu-nav .cabecalho-servicos ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cabecalho-servicos ul li{ 
+    padding: 20px 0;
+}
+
+
+.cabecalho-servicos ul li a{
+    gap: 5px;
+    padding: 20px 10px;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--pretofont);
+    text-transform: uppercase;
+    transition: .5s all;
+}
+
+.cabecalho-servicos ul li a .fa-search{
+    font-size: 21px;
+    padding-left: 10px;
+    border-left: 1px solid grey;
+}
+
+.cabecalho-servicos ul li a:hover{
+    background-color: lightgrey;
+}
+
+.cabecalho-servicos ul li .search:hover{
+    background-color: white;
+}
+
+/*Final do cabecalho*/
+
+
+
+/*Inicio main*/
+
+main button{
+    position: fixed;
+    top: 90%;
+    left: 10px;
+    width: 130px;
+    height: 40px;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(62, 202, 132);
+    box-shadow: 1px 1px 10px  rgba(78, 78, 78, 0.747);
+    animation: up 1.5s normal infinite;
+}
+
+@keyframes up{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(5px);
+    }
+}
+
+main button i{
+    font-size: 19px;
+    color: white;
+}
+
+main .fundo-main{
+    position: relative;
+    top: 110px;
+    margin: 0 auto;
+    background-color: lightgrey;
+    max-width: 2500px;
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: left ;
+    background-repeat: no-repeat;
+    background-image: url(01-imagens/gera_foto.jfif);
+    margin-bottom: 15px;
+}
+
+main .box-branding{
+    margin: 0 2%;
+    max-width: 950px;
+    margin-top: 100px;
+}
+
+main .box-branding h3{
+    padding: 25px 0;
+    font-weight: 400;
+    font-size: 1.1em;
+    letter-spacing: -0.5px;
+}
+
+section.info-empresa{
+    max-width: 950px;
+    margin: 20px auto;
+}
+
+.info-empresa .fachada-emp{
+    margin-right: 10px;
+    float: left;
+    width: 45%;
+    height: 600px;
+    background-size: 100% 100%;
+    background-position: left ;
+    background-repeat: no-repeat;
+    background-image: url(01-imagens/fachada16_5ee15bc214cc9.jpg);
+    cursor: pointer;
+}
+
+.info-empresa .fachada-emp:hover{
+    opacity: 0.60;
+}
+
+.info-empresa .missao-emp{
+    margin-left: 10px;
+    float: right;
+    width: 45%;
+    height: 600px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(01-imagens/miisssaoo17_5ee199fc38140.jpg);
+    cursor: pointer;
+}
+
+.info-empresa .missao-emp:hover{
+    opacity: 0.60;
+}
+
+.historia-emp{
+    margin: 0 2%;
+}
+
+.info-empresa .historia-emp h2{
+    padding: 15px 0;
+    font-size: 2em;
+    font-weight: 400;
+    color: var(--verdetitulos);
+}
+
+.info-empresa .historia-emp .primeira-sessao{
+    float: left;
+    width: 70%;
+}
+
+.historia-emp .primeira-sessao p{
+    padding: 15px 0;
+}
+
+.imagem-historia{
+    float: right;
+    width: 30%;
+    height: 150px;
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(01-imagens/IMG_20191202_145156_5ee1855db7682.jpeg);
+    cursor: pointer;
+}
+
+.imagem-historia:hover{
+    opacity: 0.60;
+}
+
+.historia-emp .segunda-sessao p{
+    padding: 15px 10px;
+    float: left;
+    width: 50%;
+}
+
+.img-historia{
+    float: left;
+    width: 20%;
+    height: 250px;
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(01-imagens/IMG_20191202_145050_5ee19d9cb0134.jpeg);
+    cursor: pointer;
+}
+
+.img-historia:hover{
+    opacity: 0.60;
+}
+
+section.dados-emp{
+    display: flex;
+    background-color: var(--corrope);
+}
+
+.dados-emp .termos{
+    display: flex;
+    margin: 20px 10px;
+    justify-content: center;
+    
+}
+
+.dados-emp .termos li{
+    padding: 5px 10px;
+    border-left: 1px solid gray;
+}
+
+.dados-emp .termos li:nth-of-type(1){
+    border: none;
+}
+
+.dados-emp .termos li a{
+    color: white;
+    font-size: 1.1em;
+}
+
+.dados-emp .termos li a:hover{
+    text-decoration: underline;
+}
+
+.dados-emp .contatos{
+    display: flex;
+}
+
+.contatos .contato-emp{
+    width: 33.3%;
+    padding: 20px 25px;
+    border-top: 1px solid gray;
+}
+
+.contatos .contato-emp h3{
+    font-size: 1.5em;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+
+.contatos .contato-emp h3 i{
+    color: white;
+}
+
+.contatos .contato-emp p{
+    color: white;
+    line-height: 25px;
+}
+
+.contatos .contato-emp p a{
+    color: white;
+    line-height: 25px;
+} 
+
+.contatos .contato-emp p a:hover{
+    text-decoration: underline;
+}
+
+.contatos .contato-emp p i{
+    color: white;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 25px 0;
+    background-color: var(--verdetitulos);
+}
+
+footer p{
+    border-right: 1px solid white;
+}
+
+footer p:nth-of-type(2){
+    border: none;
+}
+
+footer p a{
+    color: white;
+    padding: 0 10px;
+    font-size: .7em;   
+}
+
+
+/*estilização pagina soluções*/
+
+.solucoes h1{
+    padding: 10px 0;
+    font-size: 3.5em;
+    font-weight: 400;
+    color: var(--verdetitulos);
+    margin-top: 120px;
+}
+
+.solucoes .imagens-copy{
+    display: flex;
+}
+
+.imagens-copy .sol-residencial , .imagens-copy .sol-comercial{
+    width: 50%;
+}
+
+.imagens-copy .sol-residencial h3 , .imagens-copy .sol-comercial h3{
+    font-size: 2em;
+    font-weight: 400;
+    color: var(--verdetitulos);
+}
+
+.imagens-copy .resi-fundo img, .imagens-copy .comer-fundo img{
+    width: 450px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.imagens-copy .sol-residencial p , .imagens-copy .sol-comercial p{
+    max-width: 420px;
+    padding: 10px 0;
+}
+
+/*Inicio estilização do formulario*/
+
+
+.for-contatos{
+    display: flex;
+    justify-content: center;
+}
+
+
+.for-contatos  form{
+    width: 50%;
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.for-contatos  form input{
+    padding: 10px 5px;
+    margin: 5px;
+    border-radius: 3px;
+    border: 1px solid lightgrey;
+    box-shadow: 1px 1px 2px lightgrey;
+}
+
+.for-contatos  form label{
+    margin: 15px 0 0 5px;
+    font-weight: 600;
+}
+
+.contato-pessoal{
+    display: flex;
+}
+
+.contato-pessoal .user-email{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.contato-pessoal .user-tel{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.endereco-pessoal{
+    display: flex;
+}
+
+.endereco-pessoal .city-user{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.endereco-pessoal .est-user{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.for-contatos  form textarea{
+    padding: 10px 5px;
+    margin: 5px;
+    border-radius: 3px;
+    border: 1px solid lightgrey;
+    box-shadow: 1px 1px 2px lightgrey;
+}
+
+.caixas{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.chave-seg{
+    margin: 0 5px;
+    width: 170px;
+    height: 40px;
+    border-radius: 3px;
+    border: 1px solid lightgrey;
+    box-shadow: 1px 1px 2px lightgrey;
+}
+
+.caixas p{
+    margin: 0 5px;
+}
+
+.termos-poli{
+    display: flex;
+    align-items: baseline;
+}
+
+.termos-poli a{
+    text-decoration: underline;
+}
+
+
+/*fim do formulario*/
+
+.for-contatos .contato-pgsolucoes{
+    width: 30%;
+}
+
+.contato-pgsolucoes h3{
+    color: var(--verdeemp);
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.contato-pgsolucoes p{
+    font-size: 1.1em;
+    z-index: 999;
+    top: 20px;
+}
+
+.contato-pgsolucoes .cps{
+    margin: 60px 40px;
+    position: relative;
+    z-index: 99;
+}
+
+
+.contato-pgsolucoes .cps:nth-of-type(1){
+    margin-top: 25px;
+    
+}
+
+.localizacao-solucoes .box-local{
+    margin-top: 15px;
+    width: 250px;
+    height: 250px;
+    border-radius: 3px;
+    border: 1px solid lightgrey;
+    box-shadow: 1px 1px 2px lightgrey;
+}
+
+.contato-pgsolucoes .fase{
+    color: rgba(128, 128, 128, 0.164);
+    font-size: 5em;
+    position: absolute;
+    top: 0;
+    left: 80%;
+    z-index: 1;
+}

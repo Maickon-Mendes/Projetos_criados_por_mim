@@ -1,0 +1,81 @@
+@media screen and (max-width: 1100px) {
+    .nav-inferior{
+        padding: 10px 15px;
+    }
+
+    .presentes a h1{
+        font-size: 2.2rem;
+    }
+
+    .presentes .logo-topo{
+        margin: 10px auto 10px auto ;
+    }
+}
+
+@media screen and (max-width: 832px){
+    header nav.descktop{
+        display: none;
+    }
+
+    nav.mobile{
+        display: block;
+    }
+
+    .lista-ordenada-mobile nav ul li{
+        display: block;
+    }
+
+    .lista-ordenada{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 732px){
+    .smarwhatch{
+        width: 100%;
+        float: none;
+    }
+
+    .airpods{
+        width: 100%;
+        float: none;
+    }
+
+    .ipad-mini {
+        float: none;
+        width: 100%;
+    }
+
+    .colab-smartfit{
+        float: none;
+        width: 100%;
+        
+    }
+
+    .mecpro{
+        float: none;
+        width: 100%;
+    }
+
+    .appletv{
+        float: none;
+        width: 100%;
+    }
+
+    footer{
+       
+        float: none;
+    }
+    footer .pais{
+         margin: 0 2%;
+        float: none;
+        text-align: left;
+    }
+
+    footer .links-rodape{
+        float: none;
+        padding: 5px 0 10px 0;
+    }
+
+}

@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #5a71bb;
+    text-align: center;
+    color: white;
+    padding: 20px 0;
+}
+
+.lista-cadastro{
+    display: flex;
+    margin: 20px 0;
+    padding: 0 20px;
+}
+
+.lista-cadastro input[type=text]{
+    flex: 1;
+    margin: 0 5px ;
+    height: 40px;
+    padding-left: 10px;
+}
+
+.lista-produto-single {
+    padding: 10px 0;
+    display: flex;
+    border-bottom: 1px solid gray;
+    justify-content: space-between;
+    margin: 0 30px;
+}
+
+.lista-produto-single span{ 
+    background-color: #5a71bb;
+    padding: 6px;
+    border-radius: 10px;
+    color: white;
+}

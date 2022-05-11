@@ -1,0 +1,710 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p{
+    max-width: 800px;
+    letter-spacing: 1px;
+    line-height: 22px;
+    color: rgb(51, 51, 51);
+    text-align: center;
+    font-size: .9em;
+    margin: 0 1%;
+}
+
+
+h2{
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    color: var(--corEmpresa);
+}
+
+i{
+    font-size: 16px;
+    color: white;
+}
+:root{
+    --corEmpresa: #318174;
+}
+
+.caixa-titulo{
+    margin: 0 auto;
+    width: 300px;
+    position: relative;
+    z-index: 10;
+    background-color: rgb(255, 255, 255);
+}
+
+.caixa-titulo::after{
+    content: "";
+    position: absolute;
+    left: -33px;
+    top: 19px;
+    height: 98%;
+    width: 98%;
+    border: 7px solid var(--corEmpresa);
+    z-index: -10;
+}
+
+/*inicio do header*/
+
+#header header{
+    z-index: 100;
+    position: fixed;                
+    left: 0;
+    top: 0;
+}
+
+
+
+#header nav{
+    background-color: var(--corEmpresa);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    max-width: 1300px;
+    padding: 0 10px;
+}
+
+#header nav .logo a{
+    width: 180px;
+    margin: 0 2%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: all .3s;
+}
+
+#header nav .logo a:hover{
+    color: #00d3b0;
+}
+
+#header nav .logo-header a h1{
+    font-size: 4em;
+}
+
+#header nav .logo-header a span{
+    font-size: .8em;
+    text-align:  center;
+    width: 73px;
+}
+
+#header nav .nav-list{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-mobile{
+    display: none;
+}
+
+#header nav ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#header nav ul li{
+    padding: 10px;
+}
+
+#header nav ul li a{
+    font-size: 1.3em;
+    color: white;
+    transition: all .3s;
+    text-transform: uppercase;
+}
+
+#header nav ul li a:hover{
+    color: #00d3b0;
+}
+
+#header nav .num-contatos{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    font-size: 1em;
+    text-align: center;
+}
+
+#header nav .num-contatos i.fa-whatsapp{
+    font-size: 19px;
+}
+
+#header nav .num-contatos a{
+    color: white;
+    padding: 2px 0;
+    transition: all .3s;
+}
+
+#header nav .num-contatos a:hover{
+    color: #00d3b0;
+}
+
+/*and header*/
+
+/*background-slider*/
+
+#background-slider .box-imagens{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+#background-slider .box-imagens img{
+    position: absolute;
+    opacity: 0;
+    transition: 2s ease;
+
+}
+
+#background-slider .box-imagens img.selecionada{
+    opacity: 1;
+}
+
+.whatsapp {
+    position: fixed;
+    top: 90%;
+    left: 10px;
+    width: 130px;
+    height: 40px;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(62, 202, 132);
+    box-shadow: 1px 1px 10px  rgba(78, 78, 78, 0.747);
+    animation: up 1.5s normal infinite;
+    z-index: 999;
+}
+
+@keyframes up{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(5px);
+    }
+}
+
+ button i {
+    font-size: 19px;
+    color: white;
+}
+
+/*and background-slider*/
+
+
+/*section servicos*/
+
+#servicos .container{
+    flex-direction: column;
+    border-bottom: 2px solid var(--corEmpresa);
+    padding-bottom: 30px;
+}
+
+#servicos .copy{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 38vh;
+    border-bottom: 2px solid var(--corEmpresa);
+}
+
+#servicos .copy h2{
+    font-size: 2em;
+}
+
+#servicos .todos-servicos h2{
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    margin: 50px auto;
+    text-transform: uppercase;
+    color: white;
+    background-color: var(--corEmpresa);   
+}
+
+#servicos .todos-servicos .servicos-prestados{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 650px;
+    
+}
+
+#servicos .todos-servicos .servicos-prestados h3{
+    padding: 15px 10px;
+    font-size: 1.5em;
+    color: var(--corEmpresa);
+    text-align: center;
+}
+
+#servicos .todos-servicos .servicos-prestados p{
+    margin-bottom: 15px;
+}
+
+#servicos .todos-servicos .boll-img{
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+
+#servicos .todos-servicos .slider{
+    margin: 0 auto;
+    width: 400px;
+    height: 500px;
+    display: flex;
+    overflow: hidden;
+}
+
+.caixa-bollImg{
+    display: flex;
+}
+
+#servicos .todos-servicos  .slider .slides{
+    width: 900px;
+    height: 100vh;
+    display: flex;
+}
+
+#servicos .todos-servicos .slider .slide{
+    width: 33.3%;
+    transition: 1s;
+    position: relative;
+}
+
+#servicos .todos-servicos .slider .slide img.teste{
+    position: inherit;
+}
+
+#servicos .todos-servicos img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    position: absolute;
+    object-fit: cover;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -33.3%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -66.6%;
+}
+
+#servicos .todos-servicos .boll-img::before{
+    content: "";
+    position: absolute;
+    top: 95%;
+    left: 25%;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: rgb(37, 37, 37);
+    transform: perspective(64px) rotateX(40deg) scale(1, 0.35);
+    filter: blur(28px);
+    opacity: 0.8;
+    transition: .3s ease;
+}
+
+#servicos .bolets .btn-label{
+    position: relative;
+    background-color: lightgray;
+    cursor: pointer;
+    width: 12px;
+    height: 12px;
+    border-radius: 50% ;
+    display: flex;
+    margin-bottom: 100px;
+    top: -18px;
+}
+
+#servicos .bolets .btn-label:hover{
+    background-color: var(--corEmpresa);
+}
+
+#servicos .todos-servicos .boll-img .btn-slider{
+    width: 80px;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 300px;
+}
+
+#servicos .btn-slider .activa{
+    background-color: var(--corEmpresa);
+}
+
+#servicos .bolets{
+    top:100%;
+    width: 12px;
+    height: 12px;
+    background-color: lightgray; 
+    border-radius: 50%;
+    margin:10px auto;
+    cursor: pointer;
+}
+
+
+
+/*section servicos*/
+
+
+/*section contatos*/
+
+.contato-roda-pe h2{
+    height: 80px;
+    width: 300px;
+    text-align: center;
+    margin: 0 auto;
+    align-items: center;
+    padding-top: 20px ;
+    text-transform: uppercase;
+    color: white;
+    background-color: var(--corEmpresa);   
+}
+
+.contato-roda-pe{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+
+.contato-roda-pe .caixa-titulo::after{
+    content: "";
+    position: absolute;
+    left: -33px;
+    top: 18px;
+    height: 80px;
+    width: 300px;
+    border: 7px solid var(--corEmpresa);
+    z-index: -10;
+}
+
+.contato-roda-pe{
+    margin-top: 45px;
+}
+
+.contato-roda-pe .for-roda-pe{
+    max-width: 1200px;
+    width: 80%;
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contato-roda-pe .for-roda-pe form{
+    margin-top: 80px;
+    width: 100%;
+}
+
+.for-roda-pe input{
+    width: 100%;
+    height: 46px;
+    border: none;
+    outline: none;
+    color: rgb(61, 61, 61);
+    background: transparent;
+    transition: .3s ease-in-out;
+    border-bottom: 1px solid #47a091;
+    font-size: 1em;
+    padding-left: 8px;
+}
+
+.input-field{
+    position: relative;
+    margin-bottom: 20px;
+    
+}
+
+.w50{
+    display: flex;
+    width: 100%;
+}
+
+.input-contac{
+    width: 50%;
+}
+
+.input-contac:nth-of-type(1){
+    margin-right: 6px;
+}
+
+label{
+    top: 0;
+    left: 0;
+    color: rgb(61, 61, 61);
+    position: absolute;
+    transform: translateY(18px);
+    transition: .3s ease-in-out;
+    font-size: .9em;
+    
+}
+
+input:focus{
+    
+    border-bottom: 2px solid #4FB89D;
+    box-shadow:  0 1px 0 0 #4FB89D;
+    outline: none;
+}
+
+input:focus + label{ /*quando eu der foco no imput modifique o label  (precisa do sinal + )*/
+    transform: translateY(-14px) scale(.8); /*scale é para diminuir */
+    color: rgb(62, 202, 132);
+    font-weight: bold;
+}
+
+input:not(:placeholder-shown) + label{/*quando não tiver placeholder faça isso*/ 
+    color: rrgb(62, 202, 132);
+    font-weight: bold;
+    transform: translateY(-14px) scale(.8);
+}
+
+input:not(:placeholder-shown){
+    box-shadow:  1px 1px 4px  0px #26a96a;
+    border-bottom: 1px solid #26a96a;
+}
+
+input::placeholder{
+    color: transparent;
+}
+
+button.form-btn{
+    display: block;
+    margin: 25px auto;
+    margin-top: 48px;
+    padding: 10px 45px;
+    background-color: var(--corEmpresa);    
+    border: none;
+    border-radius: 12px;
+    box-shadow: 2px 1px 7px 1px rgba(92, 92, 92, 0.664);
+    color: white;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1em;
+    transition: .3s all;
+    cursor: pointer;
+}
+
+button.form-btn:hover{
+    letter-spacing: .6px;
+}
+
+
+span.error {
+    display: flex;
+    padding: 0;
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+span.error.active {
+    border: 1px solid red;
+    padding: 0.4em;
+}
+
+/*Final formulario rodape*/
+
+
+
+/*Inicio do Footer*/
+
+footer{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color:var(--corEmpresa);
+    text-align: center;
+    margin-top: 15px;
+}
+
+footer p{
+    margin-top: 20px;
+    color: white; 
+    font-size: 1em;
+    
+}
+
+@media screen and (max-width: 1050px) {
+    #header nav ul li a{
+        font-size: 1em;
+    }
+
+    #header nav .num-contatos{
+        font-size: .9em;
+        width: 150px;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+
+
+    #header nav .logo-header a h1{
+        font-size: 2.9em;
+    }
+
+    #header nav .logo-header a span{
+        font-size: .6em;
+    }
+
+    #header nav .logo a{
+        width: 160px;
+       
+    }
+
+    #header nav .num-contatos{
+        font-size: .8em;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    #header nav .nav-list{
+        display: none;
+    }
+
+    .nav-mobile{
+        top: 80px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        min-height: 50vh;
+        position: absolute;
+        z-index: 1111;
+        background-color: var(--corEmpresa);
+        transition: 1s all;
+    }
+
+    .nav-mobile ul{
+        margin-top: 50px;
+        flex-direction: column;
+        align-items: center;
+        transition: 1s all;
+
+    }
+
+    .nav-mobile ul li {
+        margin: 15px 0;
+    }
+
+    .active-btn-mobile{
+        display: none;
+    }
+
+    #header .hamburger{
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+    }
+
+    #header .hamburger .bar{
+        display: block;
+        width: 100%;
+        border-top: 4px solid;
+        color: white;
+    }
+
+    #header .hamburger .bar::after{
+        content: '';/*para o afiter funcionar ele precisa ter conteudo!  (por isso precisa dessa teg) precisa dar um display block para wue ele funcione*/
+            display: block;
+            width: 100%;
+            height: 4px;
+            background-color: white;/*vai erdar a cor do pai*/
+            margin-top: 6px;
+            transition: .4s;
+            position: relative;
+    }
+
+    #header .hamburger .bar::before{
+        content: '';/*para o afiter funcionar ele precisa ter conteudo!  (por isso precisa dessa teg) precisa dar um display block para wue ele funcione*/
+            display: block;
+            width: 100%;
+            height: 4px;
+            background-color: white;/*vai erdar a cor do pai*/
+            transition: .4s;
+            position: relative;
+            margin-top: 6px;
+    }
+
+    #header .hamburger  .bar.active{
+        border-top: 0px solid;
+
+    }
+
+    .bar.active::before{
+        transform: rotate(45deg);
+    }
+
+   .bar.active::after{
+        transform: rotate(-45deg);
+        top: -10px;
+    }
+
+    .input-contac{
+        width: 100%;
+    }
+
+    .w50{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 370px){
+#servicos .todos-servicos .servicos-prestados{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    max-height: 670px;
+}
+}
+
+.boll-img input{
+    display: none;
+}
