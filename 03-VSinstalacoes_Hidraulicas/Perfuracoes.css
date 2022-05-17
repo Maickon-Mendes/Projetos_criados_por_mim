@@ -1,0 +1,106 @@
+.slider_Perfuracao{
+  margin: 0 auto;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.slides_Perfuracao{
+  width: 300%;
+  height: 400px;
+  display: flex;
+}
+
+.slides_Perfuracao input{
+  display: none;
+}
+
+.slide_Perfuracao{
+  width: 33.3%;
+  position: relative;
+  transition: 1s;
+}
+
+.slide_Perfuracao img{
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.manual-navigation_Perfuracao{
+  position: absolute;
+  width: 400px;
+  height: 40px;
+  margin-top: -58px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.manual-btn_Perfuracao{
+  border: 2px solid var(--corEmpresa);
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+.manual-btn.bt1_Perfuracao{
+  margin-left: 150px;
+}
+.manual-btn.bt2_Perfuracao{
+  margin-left: 204px;
+}
+.manual-btn.bt3_Perfuracao{
+  margin-left: 258px;
+
+}
+
+.manual-btn:hover{
+  background-color: var(--corEmpresa);
+}
+
+#radio1_Perfuracao:checked ~ .first_Perfuracao{
+  margin-left: 0;
+}
+
+#radio2_Perfuracao:checked ~ .first_Perfuracao{
+  margin-left: -33.3%;
+}
+
+#radio3_Perfuracao:checked ~ .first_Perfuracao{
+  margin-left: -66.6%;
+}
+
+.navigation-auto_Perfuracao div{
+  border: 2px solid var(--corEmpresa);
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transform: 1s;
+}
+
+.navigation-auto_Perfuracao{
+  position: absolute;
+  width: 800px;
+  margin-top: 360px;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 150px;
+}
+
+.navigation-auto_Perfuracao div:not(:last-child){
+  margin-right: 40px;
+}
+
+#radio1_Perfuracao:checked ~ .navigation-auto_Perfuracao .auto-btn1_Perfuracao{
+  background-color:  var(--corEmpresa);
+}
+
+#radio2_Perfuracao:checked ~ .navigation-auto_Perfuracao .auto-btn2_Perfuracao{
+  background-color:  var(--corEmpresa);
+}
+
+#radio3_Perfuracao:checked ~ .navigation-auto_Perfuracao .auto-btn3_Perfuracao{
+  background-color: var(--corEmpresa);
+}

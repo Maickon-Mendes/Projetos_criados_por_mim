@@ -1,0 +1,106 @@
+.slider_Agua{
+  margin: 0 auto;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.slides_Agua{
+  width: 300%;
+  height: 400px;
+  display: flex;
+}
+
+.slides_Agua input{
+  display: none;
+}
+
+.slide_Agua{
+  width: 33.3%;
+  position: relative;
+  transition: 1s;
+}
+
+.slide_Agua img{
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.manual-navigation_Agua{
+  position: absolute;
+  width: 400px;
+  height: 40px;
+  margin-top: -58px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.manual-btn_Agua{
+  border: 2px solid var(--corEmpresa);
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+.manual-btn.bt1_Agua{
+  margin-left: 150px;
+}
+.manual-btn.bt2_Agua{
+  margin-left: 204px;
+}
+.manual-btn.bt3_Agua{
+  margin-left: 258px;
+
+}
+
+.manual-btn:hover{
+  background-color: var(--corEmpresa);
+}
+
+#radio1_Agua:checked ~ .first_Agua{
+  margin-left: 0;
+}
+
+#radio2_Agua:checked ~ .first_Agua{
+  margin-left: -33.3%;
+}
+
+#radio3_Agua:checked ~ .first_Agua{
+  margin-left: -66.6%;
+}
+
+.navigation-auto_Agua div{
+  border: 2px solid var(--corEmpresa);
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transform: 1s;
+}
+
+.navigation-auto_Agua{
+  position: absolute;
+  width: 800px;
+  margin-top: 360px;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 150px;
+}
+
+.navigation-auto_Agua div:not(:last-child){
+  margin-right: 40px;
+}
+
+#radio1_Agua:checked ~ .navigation-auto_Agua .auto-btn1_Agua{
+  background-color:  var(--corEmpresa);
+}
+
+#radio2_Agua:checked ~ .navigation-auto_Agua .auto-btn2_Agua{
+  background-color:  var(--corEmpresa);
+}
+
+#radio3_Agua:checked ~ .navigation-auto_Agua .auto-btn3_Agua{
+  background-color: var(--corEmpresa);
+}
