@@ -251,6 +251,11 @@ i{
     font-size: 2em;
 }
 
+#servicos .todos-servicos{
+    width: 100%;
+    max-width: 1200px;
+}
+
 #servicos .todos-servicos h2{
     padding: 20px;
     width: 300px;
@@ -281,46 +286,74 @@ i{
     margin-bottom: 15px;
 }
 
-#servicos .todos-servicos .boll-img{
-    width: 300px;
-    height: 300px;
-    position: relative;
+.perfuracoes_servico{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 }
 
-#servicos .todos-servicos .slider{
+.slider{
     margin: 0 auto;
     width: 400px;
-    height: 500px;
-    display: flex;
+    height: 400px;
     overflow: hidden;
 }
 
-.caixa-bollImg{
+.slides{
+    width: 300%;
+    height: 400px;
     display: flex;
 }
 
-#servicos .todos-servicos  .slider .slides{
-    width: 900px;
-    height: 100vh;
-    display: flex;
+.slides input{
+    display: none;
 }
 
-#servicos .todos-servicos .slider .slide{
+.slide{
     width: 33.3%;
-    transition: 1s;
     position: relative;
+    transition: 1s;
 }
 
-#servicos .todos-servicos .slider .slide img.teste{
-    position: inherit;
-}
-
-#servicos .todos-servicos img{
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    position: absolute;
+.slide img{
+    width: 400px;
+    height: 400px;
     object-fit: cover;
+    border-radius: 50%;
+}
+
+.manual-navigation{
+    position: absolute;
+    width: 400px;
+    height: 40px;
+    margin-top: -58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.manual-btn{
+    border: 2px solid var(--corEmpresa);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual-btn.bt1{
+    margin-left: 150px;
+}
+.manual-btn.bt2{
+    margin-left: 204px;
+}
+.manual-btn.bt3{
+    margin-left: 258px;
+
+}
+
+.manual-btn:hover{
+    background-color: var(--corEmpresa);
 }
 
 #radio1:checked ~ .first{
@@ -334,6 +367,41 @@ i{
 #radio3:checked ~ .first{
     margin-left: -66.6%;
 }
+
+.navigation-auto div{
+    border: 2px solid var(--corEmpresa);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transform: 1s;
+}
+
+.navigation-auto{
+    position: absolute;
+    width: 800px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 150px;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color:  var(--corEmpresa);
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color:  var(--corEmpresa);
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: var(--corEmpresa);
+}
+
+
 
 #servicos .todos-servicos .boll-img::before{
     content: "";
