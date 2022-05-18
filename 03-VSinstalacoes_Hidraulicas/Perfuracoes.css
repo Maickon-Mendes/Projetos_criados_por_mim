@@ -39,7 +39,7 @@
 }
 
 .manual-btn_Perfuracao{
-  border: 2px solid var(--corEmpresa);
+  border: 2px solid grey;
   padding: 5px;
   border-radius: 10px;
   cursor: pointer;
@@ -57,7 +57,7 @@
 }
 
 .manual-btn:hover{
-  background-color: var(--corEmpresa);
+  background-color: grey;
 }
 
 #radio1_Perfuracao:checked ~ .first_Perfuracao{
@@ -73,7 +73,7 @@
 }
 
 .navigation-auto_Perfuracao div{
-  border: 2px solid var(--corEmpresa);
+  border: 2px solid grey;
   padding: 5px;
   border-radius: 10px;
   cursor: pointer;
@@ -94,13 +94,13 @@
 }
 
 #radio1_Perfuracao:checked ~ .navigation-auto_Perfuracao .auto-btn1_Perfuracao{
-  background-color:  var(--corEmpresa);
+  background-color:  grey;
 }
 
 #radio2_Perfuracao:checked ~ .navigation-auto_Perfuracao .auto-btn2_Perfuracao{
-  background-color:  var(--corEmpresa);
+  background-color:  grey;
 }
 
 #radio3_Perfuracao:checked ~ .navigation-auto_Perfuracao .auto-btn3_Perfuracao{
-  background-color: var(--corEmpresa);
+  background-color: grey;
 }

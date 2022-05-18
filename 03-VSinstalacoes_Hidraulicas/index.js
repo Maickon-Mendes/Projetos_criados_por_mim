@@ -141,6 +141,7 @@ const btnLinks = document.querySelectorAll(".active-btn-mobile ul li a")
 const btnFecharMenu = document.querySelector(".hamburger .bar")
 
 btnMobile.addEventListener("click", ()=>{
+    header.style.height = '80px'
     addLista.classList.toggle("active-btn-mobile")
     btnFecharMenu.classList.toggle("active")
 })

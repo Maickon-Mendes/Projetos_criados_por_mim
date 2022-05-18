@@ -39,7 +39,7 @@
 }
 
 .manual-btn_Agua{
-  border: 2px solid var(--corEmpresa);
+  border: 2px solid grey;
   padding: 5px;
   border-radius: 10px;
   cursor: pointer;
@@ -57,7 +57,7 @@
 }
 
 .manual-btn:hover{
-  background-color: var(--corEmpresa);
+  background-color: grey;
 }
 
 #radio1_Agua:checked ~ .first_Agua{
@@ -73,7 +73,7 @@
 }
 
 .navigation-auto_Agua div{
-  border: 2px solid var(--corEmpresa);
+  border: 2px solid grey;
   padding: 5px;
   border-radius: 10px;
   cursor: pointer;
@@ -94,13 +94,13 @@
 }
 
 #radio1_Agua:checked ~ .navigation-auto_Agua .auto-btn1_Agua{
-  background-color:  var(--corEmpresa);
+  background-color:  grey;
 }
 
 #radio2_Agua:checked ~ .navigation-auto_Agua .auto-btn2_Agua{
-  background-color:  var(--corEmpresa);
+  background-color:  grey;
 }
 
 #radio3_Agua:checked ~ .navigation-auto_Agua .auto-btn3_Agua{
-  background-color: var(--corEmpresa);
+  background-color: grey;
 }

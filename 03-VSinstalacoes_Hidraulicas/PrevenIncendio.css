@@ -39,7 +39,7 @@
 }
 
 .manual-btn_Prevent{
-  border: 2px solid var(--corEmpresa);
+  border: 2px solid grey;
   padding: 5px;
   border-radius: 10px;
   cursor: pointer;
@@ -57,7 +57,7 @@
 }
 
 .manual-btn:hover{
-  background-color: var(--corEmpresa);
+  background-color: grey;
 }
 
 #radio1_Prevent:checked ~ .first_Prevent{
@@ -73,7 +73,7 @@
 }
 
 .navigation-auto_Prevent div{
-  border: 2px solid var(--corEmpresa);
+  border: 2px solid grey;
   padding: 5px;
   border-radius: 10px;
   cursor: pointer;
@@ -94,13 +94,13 @@
 }
 
 #radio1_Prevent:checked ~ .navigation-auto_Prevent .auto-btn1_Prevent{
-  background-color:  var(--corEmpresa);
+  background-color:  grey;
 }
 
 #radio2_Prevent:checked ~ .navigation-auto_Prevent .auto-btn2_Prevent{
-  background-color:  var(--corEmpresa);
+  background-color:  grey;
 }
 
 #radio3_Prevent:checked ~ .navigation-auto_Prevent .auto-btn3_Prevent{
-  background-color: var(--corEmpresa);
+  background-color: grey;
 }

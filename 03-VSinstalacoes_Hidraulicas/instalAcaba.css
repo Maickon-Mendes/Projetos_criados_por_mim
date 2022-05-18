@@ -39,7 +39,7 @@
 }
 
 .manual-btn_Acabamento{
-  border: 2px solid var(--corEmpresa);
+  border: 2px solid grey;
   padding: 5px;
   border-radius: 10px;
   cursor: pointer;
@@ -57,7 +57,7 @@
 }
 
 .manual-btn:hover{
-  background-color: var(--corEmpresa);
+  background-color: grey;
 }
 
 #radio1_Acabamento:checked ~ .first_Acabamento{
@@ -73,7 +73,7 @@
 }
 
 .navigation-auto_Acabamento div{
-  border: 2px solid var(--corEmpresa);
+  border: 2px solid grey;
   padding: 5px;
   border-radius: 10px;
   cursor: pointer;
@@ -94,13 +94,13 @@
 }
 
 #radio1_Acabamento:checked ~ .navigation-auto_Acabamento .auto-btn1_Acabamento{
-  background-color:  var(--corEmpresa);
+  background-color:  grey;
 }
 
 #radio2_Acabamento:checked ~ .navigation-auto_Acabamento .auto-btn2_Acabamento{
-  background-color:  var(--corEmpresa);
+  background-color:  grey;
 }
 
 #radio3_Acabamento:checked ~ .navigation-auto_Acabamento .auto-btn3_Acabamento{
-  background-color: var(--corEmpresa);
+  background-color: grey;
 }

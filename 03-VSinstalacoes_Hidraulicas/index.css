@@ -58,16 +58,24 @@ i{
 .caixa-titulo{
     margin: 0 auto;
     width: 300px;
+    padding: 10px 0;
     position: relative;
     z-index: 10;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--corEmpresa);
+    text-align: center;
+    top: 20px;
+}
+
+.caixa-titulo h2{
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
 }
 
 .caixa-titulo::after{
     content: "";
     position: absolute;
     left: -33px;
-    top: 19px;
+    top: 22px;
     height: 98%;
     width: 98%;
     border: 7px solid var(--corEmpresa);
@@ -251,11 +259,47 @@ i{
     font-size: 2em;
 }
 
+.todos-servicos h3{
+    margin-top: 30px;
+    text-align: center;
+    padding: 10px 0;
+    text-transform: uppercase;
+    color: var(--corEmpresa);
+}
 
+.todos-servicos p{
+    padding-bottom:20px ;
+}
+
+.perfuracoes_servico{
+    margin-top: 100px;
+}
 /*section servicos*/
 
 
 /*section contatos*/
+
+.caixa-titulo-form{
+    margin: 0 auto;
+    width: 300px;
+    padding: 10px 0;
+    position: relative;
+    z-index: 10;
+    background-color: var(--corEmpresa);
+    text-align: center;
+    top: 20px;
+}
+
+.caixa-titulo-form::after{
+    content: "";
+    position: absolute;
+    left: -33px;
+    top: 22px;
+    height: 98%;
+    width: 98%;
+    border: 7px solid var(--corEmpresa);
+    z-index: -10;
+}
 
 .contato-roda-pe h2{
     height: 80px;
@@ -476,9 +520,9 @@ footer p{
         display: flex;
         flex-direction: column;
         width: 100%;
-        min-height: 50vh;
+        min-height: 100vh;
         position: absolute;
-        z-index: 1111;
+        z-index: 1;
         background-color: var(--corEmpresa);
         transition: 1s all;
     }
@@ -555,6 +599,20 @@ footer p{
     .w50{
         flex-direction: column;
     }
+
+    .caixa-titulo-form{
+        padding: 0;
+    }
+
+    .caixa-titulo-form h2 {
+        font-size: 2rem;
+    }
+    
+    .caixa-titulo h2{
+        font-size: 2rem;
+        padding-top: 10px ;
+    }
+    
 }
 
 @media screen and (max-width: 370px){
@@ -571,3 +629,4 @@ footer p{
 .boll-img input{
     display: none;
 }
+

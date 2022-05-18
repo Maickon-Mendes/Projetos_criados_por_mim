@@ -39,7 +39,7 @@
 }
 
 .manual-btn_Gas{
-  border: 2px solid var(--corEmpresa);
+  border: 2px solid grey;
   padding: 5px;
   border-radius: 10px;
   cursor: pointer;
@@ -57,7 +57,7 @@
 }
 
 .manual-btn:hover{
-  background-color: var(--corEmpresa);
+  background-color: grey;
 }
 
 #radio1_Gas:checked ~ .first_Gas{
@@ -73,7 +73,7 @@
 }
 
 .navigation-auto_Gas div{
-  border: 2px solid var(--corEmpresa);
+  border: 2px solid gray;
   padding: 5px;
   border-radius: 10px;
   cursor: pointer;
@@ -94,13 +94,13 @@
 }
 
 #radio1_Gas:checked ~ .navigation-auto_Gas .auto-btn1_Gas{
-  background-color:  var(--corEmpresa);
+  background-color:  grey;
 }
 
 #radio2_Gas:checked ~ .navigation-auto_Gas .auto-btn2_Gas{
-  background-color:  var(--corEmpresa);
+  background-color:  grey;
 }
 
 #radio3_Gas:checked ~ .navigation-auto_Gas .auto-btn3_Gas{
-  background-color: var(--corEmpresa);
+  background-color:grey;
 }
